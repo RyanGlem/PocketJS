@@ -1,0 +1,21 @@
+{
+  "name": "draganddrop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev --respawn src/server.ts",
+    "build": "tsc && browserify js/world/world_container.js > src/bundle.js",
+    "sass": "sass src/styles/input.scss src/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "browserify": "^17.0.0"
+  }
+}
